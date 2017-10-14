@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(bpmn\.pl)$ [NC]
+RewriteRule ^ http://www.bpmn.org/ [R=302,L,NE]
